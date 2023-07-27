@@ -74,7 +74,6 @@
             padding: .25rem .5rem;
             font-weight: 600;
             color: rgba(0, 0, 0, .65);
-            background-color: transparent;
             border: 0;
         }
 
@@ -124,6 +123,17 @@
         .lh-tight {
             line-height: 1.25;
         }
+
+
+
+
+
+
+
+
+
+
+
     </style>
 
 </head>
@@ -281,13 +291,65 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="w-100 btn btn-success btn-lg btn-outline-primary">Купить
+                            </button>
                         </div>
                     </div>
                 </div>
+                <div class="col-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                </div>
+                <footer>
+                    <label for="btn-group" class="form-label">FAQ</label>
+                    <div class="col-12" id="btn-group">
+
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1"
+                                aria-expanded="true" aria-controls="collapseExample">Как купить?
+                        </button>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
+                                aria-expanded="true" aria-controls="collapseExample">Как доставить?
+                        </button>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3"
+                                aria-expanded="true" aria-controls="collapseExample">Какая гарантия?
+                        </button>
+
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body">
+                                Сделайте заказ на сайте и мы перезвоним вам
+                                сами
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                                Можете забрать в офисе или укажите адрес доставки
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                                Никаких гарантий, все что вы закажете может быть
+                                использовано против вас
+                            </div>
+                        </div>
+
+                    </div>
+
+                </footer>
             </div>
         </main>
-
     </div>
 
 </main>
@@ -304,6 +366,17 @@
             new bootstrap.Tooltip(tooltipTriggerEl)
         })
     })()
+
+
+
+
+
+
+
+
+
+
+
 </script>
 </body>
 </html>
